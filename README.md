@@ -1,2 +1,2 @@
 # pytorch-attention
- 🦖Pytorch implementation of popular Attention Mechanisms, Vision Transformers, MLP-Like models and CNNs.🔥🔥🔥
+![image](https://github.com/changzy00/pytorch-attention/blob/master/images/logo.jpg)
