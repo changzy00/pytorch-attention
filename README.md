@@ -3,7 +3,7 @@
 
 ![](https://img.shields.io/badge/python->=v3.0-yellowgreen)
 
-![](https://img.shields.io/badge/pytorch->=v1.4-yellowgreen)
+![](https://img.shields.io/badge/pytorch->=v1.5-yellowgreen)
 
 If it is helpful for your work, please give me a ⭐
 
