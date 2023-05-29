@@ -22,3 +22,8 @@ If it is helpful for your work, please give me a ⭐
 
 * An image is worth 16x16 words: Transformers for image recognition at scale (ICLR 2021) [pdf](https://arxiv.org/pdf/2010.11929)
 
+## Convolutional Neural Networks(CNNs)
+
+* Deep Residual Learning for Image Recognition (CVPR 2016) [pdf](https://arxiv.org/abs/1512.03385)
+
+
