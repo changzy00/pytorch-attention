@@ -25,6 +25,7 @@ If it is helpful for your work, please give me a ⭐
 ## Convolutional Neural Networks(CNNs)
 
 * Deep Residual Learning for Image Recognition (CVPR 2016) [pdf](https://arxiv.org/abs/1512.03385)
+* A ConvNet for the 2020s (CVPR 2022) [pdf](https://arxiv.org/abs/2201.03545)
 
 ## MLP-Like Models
 
