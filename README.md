@@ -27,6 +27,7 @@ If it is helpful for your work, please give me a ⭐
 * Deep Residual Learning for Image Recognition (CVPR 2016) [pdf](https://arxiv.org/abs/1512.03385)
 * MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications (CVPR2017) [pdf](https://arxiv.org/pdf/1704.04861.pdf)
 * MobileNetV2: Inverted Residuals and Linear Bottlenecks (CVPR2018) [pdf](https://arxiv.org/abs/1801.04381)
+* Searching for MobileNetV3 (ICCV2019) [pdf](https://arxiv.org/pdf/1905.02244)
 * A ConvNet for the 2020s (CVPR 2022) [pdf](https://arxiv.org/abs/2201.03545)
 
 ## MLP-Like Models
