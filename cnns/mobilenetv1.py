@@ -1,8 +1,15 @@
 """ 
+<<<<<<< HEAD
 PyTorch implementation of MobileNets: Efficient Convolutional Neural Networks for Mobile Vision
 Applications
 
 As described in https://arxiv.org/pdf/1704.04861
+=======
+PyTorch implementation of 
+
+As described in MobileNets: Efficient Convolutional Neural Networks for Mobile Vision
+Applications
+>>>>>>> 31665577a07d35cc0dcb4b8d803d887c26967acf
 
 MobileNets are based on a streamlined architecture that uses depthwise separable convolutions 
 to build light weight deep neural networks.
