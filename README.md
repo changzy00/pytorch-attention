@@ -36,4 +36,5 @@ If it is helpful for your work, please give me a ⭐
 ## MLP-Like Models
 
 * MLP-Mixer: An all-MLP Architecture for Vision (NeurIPS 2021) [pdf](https://arxiv.org/pdf/2105.01601.pdf)
+* Pay Attention to MLPs (NeurIPS 2021) [pdf[( https://arxiv.org/pdf/2105.08050)
 
