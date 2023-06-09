@@ -5,7 +5,7 @@
 
 ![](https://img.shields.io/badge/pytorch->=v1.5-yellowgreen)
 
-If it is helpful for your work, please give me a ⭐
+If it is helpful for your work, please⭐
 
 # Updating...
 
