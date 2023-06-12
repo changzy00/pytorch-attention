@@ -1,4 +1,11 @@
+""" 
+PyTorch implementation of CMT: Convolutional Neural Networks Meet Vision Transformers
 
+As described in http://arxiv.org/pdf/2107.06263
+
+The proposed CMT block consists of a local perception unit (LPU), a lightweight multi-head self-attention
+(LMHSA) module, and an inverted residual feed-forward network (IRFFN).
+"""
 
 
 
@@ -185,7 +192,6 @@ class CMT(nn.Module):
         x = self.stem_conv1(x)
         x = self.stem_conv2(x)
         x = self.stem_conv3(x)
-        print(x.shape)
         x, (H, W) = self.patch_embedding_a(x)
         for _, blk in enumerate(self.block_a):
             x = blk(x, H, W, self.relative_pos_a)
