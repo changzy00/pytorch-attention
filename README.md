@@ -53,4 +53,5 @@ If it is helpful for your work, please⭐
 * Pay Attention to MLPs (NeurIPS 2021) [pdf]( https://arxiv.org/pdf/2105.08050)
 * DynaMixer: A Vision MLP Architecture with Dynamic Mixing (ICML 2022) [pdf](https://arxiv.org/pdf/2201.12083)
 * Patches Are All You Need? (TMLR 2022) [pdf](https://arxiv.org/pdf/2201.09792)
+* Vision Permutator: A Permutable MLP-Like Architecture for Visual Recognition (TPAMI 2022) [pdf](https://arxiv.org/abs/2106.12368)
 
