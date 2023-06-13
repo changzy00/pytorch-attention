@@ -41,6 +41,7 @@ If it is helpful for your work, please⭐
 
 * Network In Network (ICLR 2014) [pdf](https://arxiv.org/pdf/1312.4400v3)
 * Deep Residual Learning for Image Recognition (CVPR 2016) [pdf](https://arxiv.org/abs/1512.03385)
+* Wide Residual Networks (BMVC 2016) [pdf](https://arxiv.org/pdf/1605.07146)
 * Densely Connected Convolutional Networks (CVPR 2017) [pdf](http://arxiv.org/abs/1608.06993v5)
 * Deep Pyramidal Residual Networks (CVPR 2017) [pdf](https://arxiv.org/pdf/1610.02915)
 * MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications (CVPR 2017) [pdf](https://arxiv.org/pdf/1704.04861.pdf)
