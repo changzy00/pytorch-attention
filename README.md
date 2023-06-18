@@ -66,4 +66,5 @@ If it is helpful for your work, please⭐
 * Patches Are All You Need? (TMLR 2022) [pdf](https://arxiv.org/pdf/2201.09792)
 * Vision Permutator: A Permutable MLP-Like Architecture for Visual Recognition (TPAMI 2022) [pdf](https://arxiv.org/abs/2106.12368)
 * CycleMLP: A MLP-like Architecture for Dense Prediction (ICLR 2022) [pdf](https://arxiv.org/abs/2107.10224)
+* Sequencer: Deep LSTM for Image Classification (NeurIPS 2022) [pdf](https://arxiv.org/abs/2205.01972)
 
