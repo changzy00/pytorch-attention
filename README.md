@@ -26,7 +26,20 @@ y = attn(x)
 print(y.shape)
 
 ```
-* CBAM: convolutional block attention module (ECCV 2018) [pdf](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf) 
+* CBAM: convolutional block attention module (ECCV 2018) [pdf](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/cbam.png)
+
+* ##### Code
+```python
+import torch
+from attention_mechanisms.cbam import CBAM
+
+x = torch.randn(2, 64, 32, 32)
+attn = CBAM(64)
+y = attn(x)
+print(y.shape)
+```
 * Bam: Bottleneck attention module(BMVC 2018) [pdf](http://bmvc2018.org/contents/papers/0092.pdf)
 * A2-nets: Double attention networks (NeurIPS 2018) [pdf](https://arxiv.org/pdf/1810.11579)
 * Srm : A style-based recalibration module for convolutional neural networks (ICCV 2019)  [pdf](https://arxiv.org/pdf/1903.10829) 
