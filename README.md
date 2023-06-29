@@ -12,6 +12,22 @@ If it is helpful for your work, please⭐
 ## Attention mechanisms
 
 * Squeeze-and-Excitation Networks (CVPR 2018) [pdf](https://arxiv.org/pdf/1709.01507)
+#### 15.2. Overview
+![](./model/img/A2.png)
+
+#### 15.3. Usage Code
+```python
+from model.attention.A2Atttention import DoubleAttention
+import torch
+from torch import nn
+from torch.nn import functional as F
+
+input=torch.randn(50,512,7,7)
+a2 = DoubleAttention(512,128,128,True)
+output=a2(input)
+print(output.shape)
+
+```
 * CBAM: convolutional block attention module (ECCV 2018) [pdf](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf) 
 * Bam: Bottleneck attention module(BMVC 2018) [pdf](http://bmvc2018.org/contents/papers/0092.pdf)
 * A2-nets: Double attention networks (NeurIPS 2018) [pdf](https://arxiv.org/pdf/1810.11579)
