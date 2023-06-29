@@ -12,10 +12,10 @@ If it is helpful for your work, please⭐
 ## Attention mechanisms
 
 * Squeeze-and-Excitation Networks (CVPR 2018) [pdf](https://arxiv.org/pdf/1709.01507)
-#### 15.2. Overview
-![](./model/img/A2.png)
+* ##### 15.2. Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/senet.png)
 
-#### 15.3. Usage Code
+##### 15.3. Usage Code
 ```python
 from model.attention.A2Atttention import DoubleAttention
 import torch
