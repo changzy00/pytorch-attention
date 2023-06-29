@@ -41,11 +41,89 @@ y = attn(x)
 print(y.shape)
 ```
 * Bam: Bottleneck attention module(BMVC 2018) [pdf](http://bmvc2018.org/contents/papers/0092.pdf)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/bam.png)
+
+* ##### Code
+```python
+import torch
+from attention_mechanisms.bam import BAM
+
+x = torch.randn(2, 64, 32, 32)
+attn = BAM(64)
+y = attn(x)
+print(y.shape)
+```
 * A2-nets: Double attention networks (NeurIPS 2018) [pdf](https://arxiv.org/pdf/1810.11579)
-* Srm : A style-based recalibration module for convolutional neural networks (ICCV 2019)  [pdf](https://arxiv.org/pdf/1903.10829) 
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/a2net.png)
+
+* ##### Code
+```python
+import torch
+from attention_mechanisms.double_attention import DoubleAttention
+
+x = torch.randn(2, 64, 32, 32)
+attn = DoubleAttention(64, 32, 32)
+y = attn(x)
+print(y.shape)
+```
+* Srm : A style-based recalibration module for convolutional neural networks (ICCV 2019)  [pdf](https://arxiv.org/pdf/1903.10829)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/srm.png)
+
+* ##### Code
+```python
+import torch
+from attention_mechanisms.srm import SRM
+
+x = torch.randn(2, 64, 32, 32)
+attn = SRM(64)
+y = attn(x)
+print(y.shape)
+```
 * Gcnet: Non-local networks meet squeeze-excitation networks and beyond (ICCVW 2019) [pdf](https://arxiv.org/pdf/1904.11492)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/gcnet.png)
+
+* ##### Code
+```python
+import torch
+from attention_mechanisms.gc_module import GCModule
+
+x = torch.randn(2, 64, 32, 32)
+attn = GCModule(64)
+y = attn(x)
+print(y.shape)
+```
 * Selective Kernel Networks (CVPR 2019) [pdf](https://arxiv.org/abs/1903.06586)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/sknet.png)
+
+* ##### Code
+```python
+import torch
+from attention_mechanisms.sk_module import SKLayer
+
+x = torch.randn(2, 64, 32, 32)
+attn = SKLayer(64)
+y = attn(x)
+print(y.shape)
+```
 * Linear Context Transform Block (AAAI 2020) [pdf](https://arxiv.org/pdf/1909.03834v2)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/lct.png)
+
+* ##### Code
+```python
+import torch
+from attention_mechanisms.lct import LCT
+
+x = torch.randn(2, 64, 32, 32)
+attn = LCT(64, groups=8)
+y = attn(x)
+print(y.shape)
+```
 * Gated Channel Transformation for Visual Recognition (CVPR 2020) [pdf](http://openaccess.thecvf.com/content_CVPR_2020/papers/Yang_Gated_Channel_Transformation_for_Visual_Recognition_CVPR_2020_paper.pdf)
 * Ecanet: Efficient channel attention for deep convolutional neural networks (CVPR 2020) [pdf](https://arxiv.org/pdf/1910.03151)
 * Rotate to Attend: Convolutional Triplet Attention Module (WACV 2021) [pdf](http://arxiv.org/pdf/2010.03045)
