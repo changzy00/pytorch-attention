@@ -125,12 +125,89 @@ y = attn(x)
 print(y.shape)
 ```
 * Gated Channel Transformation for Visual Recognition (CVPR 2020) [pdf](http://openaccess.thecvf.com/content_CVPR_2020/papers/Yang_Gated_Channel_Transformation_for_Visual_Recognition_CVPR_2020_paper.pdf)
-* Ecanet: Efficient channel attention for deep convolutional neural networks (CVPR 2020) [pdf](https://arxiv.org/pdf/1910.03151)
-* Rotate to Attend: Convolutional Triplet Attention Module (WACV 2021) [pdf](http://arxiv.org/pdf/2010.03045)
-* Gaussian Context Transformer (CVPR 2021) [pdf](http://openaccess.thecvf.com//content/CVPR2021/papers/Ruan_Gaussian_Context_Transformer_CVPR_2021_paper.pdf)
-* Coordinate Attention for Efficient Mobile Network Design (CVPR 2021) [pdf](https://arxiv.org/abs/2103.02907)
-* SimAM: A Simple, Parameter-Free Attention Module for Convolutional Neural Networks (ICML 2021) [pdf](http://proceedings.mlr.press/v139/yang21o/yang21o.pdf)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/gate_channel.png)
 
+* ##### Code
+```python
+import torch
+from attention_mechanisms.gate_channel_module import GCT
+
+x = torch.randn(2, 64, 32, 32)
+attn = GCT(64)
+y = attn(x)
+print(y.shape)
+```
+* Ecanet: Efficient channel attention for deep convolutional neural networks (CVPR 2020) [pdf](https://arxiv.org/pdf/1910.03151)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/ecanet.png)
+
+* ##### Code
+```python
+import torch
+from attention_mechanisms.eca import ECALayer
+
+x = torch.randn(2, 64, 32, 32)
+attn = ECALayer(64)
+y = attn(x)
+print(y.shape)
+```
+* Rotate to Attend: Convolutional Triplet Attention Module (WACV 2021) [pdf](http://arxiv.org/pdf/2010.03045)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/triplet.png)
+
+* ##### Code
+```python
+import torch
+from attention_mechanisms.triplet_attention import TripletAttention
+
+x = torch.randn(2, 64, 32, 32)
+attn = TripletAttention(64)
+y = attn(x)
+print(y.shape)
+```
+* Gaussian Context Transformer (CVPR 2021) [pdf](http://openaccess.thecvf.com//content/CVPR2021/papers/Ruan_Gaussian_Context_Transformer_CVPR_2021_paper.pdf)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/gct.png)
+
+* ##### Code
+```python
+import torch
+from attention_mechanisms.gct import GCT
+
+x = torch.randn(2, 64, 32, 32)
+attn = GCT(64)
+y = attn(x)
+print(y.shape)
+```
+* Coordinate Attention for Efficient Mobile Network Design (CVPR 2021) [pdf](https://arxiv.org/abs/2103.02907)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/coordinate.png)
+
+* ##### Code
+```python
+import torch
+from attention_mechanisms.coordatten import CoordinateAttention
+
+x = torch.randn(2, 64, 32, 32)
+attn = CoordinateAttention(64, 64)
+y = attn(x)
+print(y.shape)
+```
+* SimAM: A Simple, Parameter-Free Attention Module for Convolutional Neural Networks (ICML 2021) [pdf](http://proceedings.mlr.press/v139/yang21o/yang21o.pdf)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/simaam.png)
+
+* ##### Code
+```python
+import torch
+from attention_mechanisms.simam import simam_module
+
+x = torch.randn(2, 64, 32, 32)
+attn = simam_module(64)
+y = attn(x)
+print(y.shape)
+```
 ## Vision Transformers
 
 * An image is worth 16x16 words: Transformers for image recognition at scale (ICLR 2021) [pdf](https://arxiv.org/pdf/2010.11929)
