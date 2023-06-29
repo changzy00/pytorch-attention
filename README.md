@@ -12,20 +12,18 @@ If it is helpful for your work, please⭐
 ## Attention mechanisms
 
 * Squeeze-and-Excitation Networks (CVPR 2018) [pdf](https://arxiv.org/pdf/1709.01507)
-* ##### 15.2. Overview
+* ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/senet.png)
 
-##### 15.3. Usage Code
+* ##### Code
 ```python
-from model.attention.A2Atttention import DoubleAttention
 import torch
-from torch import nn
-from torch.nn import functional as F
+from attention_mechanisms.se_module import SELayer
 
-input=torch.randn(50,512,7,7)
-a2 = DoubleAttention(512,128,128,True)
-output=a2(input)
-print(output.shape)
+x = torch.randn(2, 64, 32, 32)
+attn = SELayer(64)
+y = attn(x)
+print(y.shape)
 
 ```
 * CBAM: convolutional block attention module (ECCV 2018) [pdf](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf) 
