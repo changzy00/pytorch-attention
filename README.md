@@ -14,7 +14,7 @@ If it is helpful for your work, please⭐
 - [Attention mechanisms](#Attention-mechanisms)
     - [1. Squeeze-and-Excitation Attention](#1-squeeze-and-excitation-attention)
 
-    - [Convolutional Block Attention](#2-convolutional-block-attention)
+    - [2. Convolutional Block Attention Module](#2-convolutional-block-attention-module)
 
 ## Attention mechanisms
 ### 1. Squeeze-and-Excitation Attention
@@ -33,8 +33,8 @@ y = attn(x)
 print(y.shape)
 
 ```
-* Convolutional Block Attention
-* CBAM: convolutional block attention module (ECCV 2018) [pdf](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf)
+### 2. Convolutional Block Attention Module
+* #### CBAM: convolutional block attention module (ECCV 2018) [pdf](https://openaccess.thecvf.com/content_ECCV_2018/papers/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.pdf)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/cbam.png)
 
