@@ -11,7 +11,7 @@ If it is helpful for your work, please⭐
 
 # Content
 
-- [Attention mechanisms](#Attention-mechanisms)
+- [Attention Mechanisms](#Attention-mechanisms)
     - [1. Squeeze-and-Excitation Attention](#1-squeeze-and-excitation-attention)
 
     - [2. Convolutional Block Attention Module](#2-convolutional-block-attention-module)
@@ -27,7 +27,27 @@ If it is helpful for your work, please⭐
     - [12. Gaussian Context Attention](#12-Gaussian-Context-Attention)
     - [13. Coordinate Attention](#13-coordinate-attention)
     - [14. SimAM](#14-SimAM)
-## Attention mechanisms
+ 
+- [Vision Transformers](#vision-transformers)
+    - [1. ViT Model](#1-ViT-Model)
+
+    - [2. XCiT Model](#2-XCiT-model)
+    - [3. PiT Model](#3-pit-model)
+    - [4. CvT Model](#4-cvt-model)
+    - [5. PvT Model](#5-pvt-model)
+    - [6. CMT Model](#6-cmt-model)
+    - [7. PoolFormer Model](#7-poolformer-model)
+    - [8. KVT Model](#8-kvt-model)
+    - [9. MobileViT Model](#9-mobilevit-model)
+    - [10. P2T Model](#10-p2t-model)
+    - [11. EfficientFormer Model](#11-EfficientFormer-Model)
+    - [12. ShiftViT Model](#12-shiftvit-model)
+    - [13. CSWin Model](#13-CSWin-Model)
+    - [14. DilateFormer Model](#14-DilateFormer-Model)
+    - [15. BViT Model](#15-bvit-model)
+    - [16. MOAT Model](#16-moat-model)
+    - 
+## Attention Mechanisms
 ### 1. Squeeze-and-Excitation Attention
 * #### Squeeze-and-Excitation Networks (CVPR 2018) [pdf](https://arxiv.org/pdf/1709.01507)
 * ##### Model Overview
@@ -243,8 +263,8 @@ y = attn(x)
 print(y.shape)
 ```
 ## Vision Transformers
-
-* An image is worth 16x16 words: Transformers for image recognition at scale (ICLR 2021) [pdf](https://arxiv.org/pdf/2010.11929)
+### 1. ViT Model
+* #### An image is worth 16x16 words: Transformers for image recognition at scale (ICLR 2021) [pdf](https://arxiv.org/pdf/2010.11929)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/vit.png)
 
@@ -258,7 +278,9 @@ model = VisionTransformer()
 y = model(x)
 print(y.shape) #[2, 1000]
 ```
-* XCiT: Cross-Covariance Image Transformer (NeurIPS 2021) [pdf](https://arxiv.org/pdf/2106.09681)
+### 2. XCiT Model
+
+* #### XCiT: Cross-Covariance Image Transformer (NeurIPS 2021) [pdf](https://arxiv.org/pdf/2106.09681)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/xcit.png)
 
@@ -271,7 +293,9 @@ model = xcit_nano_12_p16()
 y = model(x)
 print(y.shape)
 ```
-* Rethinking Spatial Dimensions of Vision Transformers (ICCV 2021) [pdf](https://arxiv.org/abs/2103.16302)
+### 3. PiT Model
+
+* #### Rethinking Spatial Dimensions of Vision Transformers (ICCV 2021) [pdf](https://arxiv.org/abs/2103.16302)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/pit.png)
 
@@ -284,7 +308,9 @@ model = pit_ti()
 y = model(x)
 print(y.shape)
 ```
-* CvT: Introducing Convolutions to Vision Transformers (ICCV 2021) [pdf](https://arxiv.org/abs/2103.15808)
+### 4. CvT Model
+
+* #### CvT: Introducing Convolutions to Vision Transformers (ICCV 2021) [pdf](https://arxiv.org/abs/2103.15808)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/cvt.png)
 
@@ -297,7 +323,9 @@ model = cvt_13()
 y = model(x)
 print(y.shape)
 ```
-* Pyramid vision transformer: A versatile backbone for dense prediction without convolutions (ICCV 2021) [pdf](https://arxiv.org/abs/2102.12122)
+### 5. PvT Model
+
+* #### Pyramid vision transformer: A versatile backbone for dense prediction without convolutions (ICCV 2021) [pdf](https://arxiv.org/abs/2102.12122)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/pvt.png)
 
@@ -310,7 +338,9 @@ model = pvt_t()
 y = model(x)
 print(y.shape)
 ```
-* CMT: Convolutional Neural Networks Meet Vision Transformers (CVPR 2022) [pdf](http://arxiv.org/pdf/2107.06263)
+### 6. CMT Model
+
+* #### CMT: Convolutional Neural Networks Meet Vision Transformers (CVPR 2022) [pdf](http://arxiv.org/pdf/2107.06263)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/cmt.png)
 
@@ -323,7 +353,9 @@ model = cmt_ti()
 y = model(x)
 print(y.shape)
 ```
-* MetaFormer is Actually What You Need for Vision (CVPR 2022) [pdf](https://arxiv.org/abs/2111.11418)
+### 7. PoolFormer Model
+
+* #### MetaFormer is Actually What You Need for Vision (CVPR 2022) [pdf](https://arxiv.org/abs/2111.11418)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/poolformer.png)
 
@@ -336,7 +368,9 @@ model = poolformer_12()
 y = model(x)
 print(y.shape)
 ```
-* KVT: k-NN Attention for Boosting Vision Transformers (ECCV 2022) [pdf](https://arxiv.org/abs/2106.00515)
+### 8. KVT Model
+
+* #### KVT: k-NN Attention for Boosting Vision Transformers (ECCV 2022) [pdf](https://arxiv.org/abs/2106.00515)
 * ##### Code
 ```python
 import torch
@@ -346,7 +380,9 @@ model = KVT()
 y = model(x)
 print(y.shape)
 ```
-* MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer (ICLR 2022) [pdf](https://arxiv.org/abs/2110.02178)
+### 9. MobileViT Model
+
+* #### MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer (ICLR 2022) [pdf](https://arxiv.org/abs/2110.02178)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/mobilevit.png)
 
@@ -359,7 +395,9 @@ model = mobilevit_s()
 y = model(x)
 print(y.shape)
 ```
-* Pyramid Pooling Transformer for Scene Understanding (TPAMI 2022) [pdf](https://arxiv.org/abs/2106.12011)
+### 10. P2T Model
+
+* #### Pyramid Pooling Transformer for Scene Understanding (TPAMI 2022) [pdf](https://arxiv.org/abs/2106.12011)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/p2t.png)
 
@@ -372,7 +410,9 @@ model = p2t_tiny()
 y = model(x)
 print(y.shape)
 ```
-* EfficientFormer: Vision Transformers at MobileNet Speed (NeurIPS 2022) [pdf](https://arxiv.org/abs/2212.08059)
+### 11. EfficientFormer Model
+
+* #### EfficientFormer: Vision Transformers at MobileNet Speed (NeurIPS 2022) [pdf](https://arxiv.org/abs/2212.08059)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/efficientformer.png)
 
@@ -385,7 +425,9 @@ model = efficientformer_l1()
 y = model(x)
 print(y.shape)
 ```
-* When Shift Operation Meets Vision Transformer: An Extremely Simple Alternative to Attention Mechanism (AAAI 2022) [pdf](https://arxiv.org/abs/2201.10801)
+### 12. ShiftViT Model
+
+* #### When Shift Operation Meets Vision Transformer: An Extremely Simple Alternative to Attention Mechanism (AAAI 2022) [pdf](https://arxiv.org/abs/2201.10801)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/shiftvit.png)
 
@@ -398,7 +440,9 @@ model = shift_t()
 y = model(x)
 print(y.shape)
 ```
-* CSWin Transformer: A General Vision Transformer Backbone with Cross-Shaped Windows (CVPR 2022) [pdf](https://arxiv.org/pdf/2107.00652.pdf)
+### 13. CSWin Model
+
+* #### CSWin Transformer: A General Vision Transformer Backbone with Cross-Shaped Windows (CVPR 2022) [pdf](https://arxiv.org/pdf/2107.00652.pdf)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/cswin.png)
 
@@ -411,7 +455,9 @@ model = CSWin_64_12211_tiny_224()
 y = model(x)
 print(y.shape)
 ```
-* DilateFormer: Multi-Scale Dilated Transformer for Visual Recognition (TMM 2023) [pdf](https://arxiv.org/abs/2302.01791)
+### 14. DilateFormer Model
+
+* #### DilateFormer: Multi-Scale Dilated Transformer for Visual Recognition (TMM 2023) [pdf](https://arxiv.org/abs/2302.01791)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/dilateformer.png)
 
@@ -424,7 +470,9 @@ model = dilateformer_tiny()
 y = model(x)
 print(y.shape)
 ```
-* BViT: Broad Attention based Vision Transformer (TNNLS 2023) [pdf](https://arxiv.org/abs/2202.06268)
+### 15. BViT Model
+
+* #### BViT: Broad Attention based Vision Transformer (TNNLS 2023) [pdf](https://arxiv.org/abs/2202.06268)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/bvit.png)
 
@@ -437,7 +485,9 @@ model = BViT_S()
 y = model(x)
 print(y.shape)
 ```
-* MOAT: Alternating Mobile Convolution and Attention Brings Strong Vision Models (ICLR 2023) [pdf](https://arxiv.org/pdf/2210.01820.pdf)
+### 16. MOAT Model
+
+* #### MOAT: Alternating Mobile Convolution and Attention Brings Strong Vision Models (ICLR 2023) [pdf](https://arxiv.org/pdf/2210.01820.pdf)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/moat.png)
 
