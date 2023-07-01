@@ -11,14 +11,14 @@ If it is helpful for your work, please⭐
 
 # Content
 
-- [Attention mechanisms](#Attention mechanisms)
+- [Attention mechanisms](#Attention-mechanisms)
     - [1. Squeeze-and-Excitation Attention](#1-squeeze-and-excitation-attention)
 
     - [Convolutional Block Attention](#2-convolutional-block-attention)
 
 ## Attention mechanisms
 ### 1. Squeeze-and-Excitation Attention
-* ### Squeeze-and-Excitation Networks (CVPR 2018) [pdf](https://arxiv.org/pdf/1709.01507)
+* #### Squeeze-and-Excitation Networks (CVPR 2018) [pdf](https://arxiv.org/pdf/1709.01507)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/senet.png)
 
