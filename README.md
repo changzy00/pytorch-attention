@@ -17,8 +17,16 @@ If it is helpful for your work, please⭐
     - [2. Convolutional Block Attention Module](#2-convolutional-block-attention-module)
     - [3. Bottleneck Attention Module](#3-Bottleneck-Attention-Module)
     - [4. Double Attention](#4-Double-Attention)
-    - [5. Style Attention](#4-Style-Attention)
-
+    - [5. Style Attention](#5-Style-Attention)
+    - [6. Global Context Attention](#6-Global-Convtext-Attention)
+    - [7. Selective Kernel Attention](#7-Selective-Kernel-Attention)
+    - [8. Linear Context Attention](#8-Linear-Context-Attention)
+    - [9. Gated Channel Attention](#9-gated-channel-attention)
+    - [10. Efficient Channel Attention](#10-efficient-channel-attention)
+    - [11. Triplet Attention](#11-Triplet-Attention)
+    - [12. Gaussian Context Attention](#12-Gaussian-Context-Attention)
+    - [13. Coordinate Attention](#13-coordinate-attention)
+    - [14. SimAM](#14-SimAM)
 ## Attention mechanisms
 ### 1. Squeeze-and-Excitation Attention
 * #### Squeeze-and-Excitation Networks (CVPR 2018) [pdf](https://arxiv.org/pdf/1709.01507)
@@ -96,7 +104,8 @@ attn = SRM(64)
 y = attn(x)
 print(y.shape)
 ```
-* Gcnet: Non-local networks meet squeeze-excitation networks and beyond (ICCVW 2019) [pdf](https://arxiv.org/pdf/1904.11492)
+### 6. Global Context Attention
+* #### Gcnet: Non-local networks meet squeeze-excitation networks and beyond (ICCVW 2019) [pdf](https://arxiv.org/pdf/1904.11492)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/gcnet.png)
 
@@ -110,7 +119,9 @@ attn = GCModule(64)
 y = attn(x)
 print(y.shape)
 ```
-* Selective Kernel Networks (CVPR 2019) [pdf](https://arxiv.org/abs/1903.06586)
+### 7. Selective Kernel Attention
+
+* #### Selective Kernel Networks (CVPR 2019) [pdf](https://arxiv.org/abs/1903.06586)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/sknet.png)
 
@@ -124,7 +135,8 @@ attn = SKLayer(64)
 y = attn(x)
 print(y.shape)
 ```
-* Linear Context Transform Block (AAAI 2020) [pdf](https://arxiv.org/pdf/1909.03834v2)
+### 8. Linear Context Attention
+* #### Linear Context Transform Block (AAAI 2020) [pdf](https://arxiv.org/pdf/1909.03834v2)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/lct.png)
 
@@ -138,7 +150,8 @@ attn = LCT(64, groups=8)
 y = attn(x)
 print(y.shape)
 ```
-* Gated Channel Transformation for Visual Recognition (CVPR 2020) [pdf](http://openaccess.thecvf.com/content_CVPR_2020/papers/Yang_Gated_Channel_Transformation_for_Visual_Recognition_CVPR_2020_paper.pdf)
+### 9. Gated Channel Attention
+* #### Gated Channel Transformation for Visual Recognition (CVPR 2020) [pdf](http://openaccess.thecvf.com/content_CVPR_2020/papers/Yang_Gated_Channel_Transformation_for_Visual_Recognition_CVPR_2020_paper.pdf)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/gate_channel.png)
 
@@ -152,7 +165,8 @@ attn = GCT(64)
 y = attn(x)
 print(y.shape)
 ```
-* Ecanet: Efficient channel attention for deep convolutional neural networks (CVPR 2020) [pdf](https://arxiv.org/pdf/1910.03151)
+### 10. Efficient Channel Attention
+* #### Ecanet: Efficient channel attention for deep convolutional neural networks (CVPR 2020) [pdf](https://arxiv.org/pdf/1910.03151)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/ecanet.png)
 
@@ -166,7 +180,9 @@ attn = ECALayer(64)
 y = attn(x)
 print(y.shape)
 ```
-* Rotate to Attend: Convolutional Triplet Attention Module (WACV 2021) [pdf](http://arxiv.org/pdf/2010.03045)
+### 11. Triplet Attention
+
+* #### Rotate to Attend: Convolutional Triplet Attention Module (WACV 2021) [pdf](http://arxiv.org/pdf/2010.03045)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/triplet.png)
 
@@ -180,7 +196,8 @@ attn = TripletAttention(64)
 y = attn(x)
 print(y.shape)
 ```
-* Gaussian Context Transformer (CVPR 2021) [pdf](http://openaccess.thecvf.com//content/CVPR2021/papers/Ruan_Gaussian_Context_Transformer_CVPR_2021_paper.pdf)
+### 12. Gaussian Context Attention
+* #### Gaussian Context Transformer (CVPR 2021) [pdf](http://openaccess.thecvf.com//content/CVPR2021/papers/Ruan_Gaussian_Context_Transformer_CVPR_2021_paper.pdf)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/gct.png)
 
@@ -194,7 +211,9 @@ attn = GCT(64)
 y = attn(x)
 print(y.shape)
 ```
-* Coordinate Attention for Efficient Mobile Network Design (CVPR 2021) [pdf](https://arxiv.org/abs/2103.02907)
+### 13. Coordinate Attention
+
+* #### Coordinate Attention for Efficient Mobile Network Design (CVPR 2021) [pdf](https://arxiv.org/abs/2103.02907)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/coordinate.png)
 
@@ -208,6 +227,7 @@ attn = CoordinateAttention(64, 64)
 y = attn(x)
 print(y.shape)
 ```
+### 14. SimAM
 * SimAM: A Simple, Parameter-Free Attention Module for Convolutional Neural Networks (ICML 2021) [pdf](http://proceedings.mlr.press/v139/yang21o/yang21o.pdf)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/simam.png)
