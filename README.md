@@ -12,7 +12,7 @@ If it is helpful for your work, please⭐
 # Content
 
 - [Attention mechanisms](#Attention mechanisms)
-    - [Squeeze-and-Excitation Networks (CVPR 2018)](#squeeze-and-excitation networks (cvpr 2018))
+    - [Squeeze-and-Excitation Networks (CVPR 2018)](#se)
 
     - [2. Self Attention Usage](#2-self-attention-usage)
 
