@@ -12,7 +12,7 @@ If it is helpful for your work, please⭐
 # Content
 
 - [Attention mechanisms](#Attention mechanisms)
-    - [1. Squeeze-and-Excitation Attention](#squeeze-and-excitation-attention)
+    - [1. Squeeze-and-Excitation Attention](#1-squeeze-and-excitation-attention)
 
     - [Convolutional Block Attention](#2-convolutional-block-attention)
 
