@@ -12,7 +12,7 @@ If it is helpful for your work, please⭐
 # Content
 
 - [Attention mechanisms](#Attention mechanisms)
-    - [Squeeze-and-Excitation Attention](#se-a)
+    - [Squeeze-and-Excitation Attention](#squeeze-and-excitation-attention)
 
     - [2. Self Attention Usage](#2-self-attention-usage)
 
