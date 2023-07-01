@@ -16,7 +16,9 @@ If it is helpful for your work, please⭐
 
     - [2. Convolutional Block Attention Module](#2-convolutional-block-attention-module)
     - [3. Bottleneck Attention Module](#3-Bottleneck-Attention-Module)
-    - [4. Double attention](#4-Double-attention)
+    - [4. Double Attention](#4-Double-Attention)
+    - [5. Style Attention](#4-Style-Attention)
+
 ## Attention mechanisms
 ### 1. Squeeze-and-Excitation Attention
 * #### Squeeze-and-Excitation Networks (CVPR 2018) [pdf](https://arxiv.org/pdf/1709.01507)
@@ -64,7 +66,7 @@ attn = BAM(64)
 y = attn(x)
 print(y.shape)
 ```
-### 3. Double attention
+### 4. Double Attention
 * #### A2-nets: Double attention networks (NeurIPS 2018) [pdf](https://arxiv.org/pdf/1810.11579)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/a2net.png)
@@ -79,7 +81,8 @@ attn = DoubleAttention(64, 32, 32)
 y = attn(x)
 print(y.shape)
 ```
-* Srm : A style-based recalibration module for convolutional neural networks (ICCV 2019)  [pdf](https://arxiv.org/pdf/1903.10829)
+### 5. Style Attention
+* #### Srm : A style-based recalibration module for convolutional neural networks (ICCV 2019)  [pdf](https://arxiv.org/pdf/1903.10829)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/srm.png)
 
