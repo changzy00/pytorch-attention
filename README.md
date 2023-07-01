@@ -15,6 +15,7 @@ If it is helpful for your work, please⭐
     - [1. Squeeze-and-Excitation Attention](#1-squeeze-and-excitation-attention)
 
     - [2. Convolutional Block Attention Module](#2-convolutional-block-attention-module)
+    - [3. Bottleneck Attention Module](#3-Bottleneck-Attention-Module)
 
 ## Attention mechanisms
 ### 1. Squeeze-and-Excitation Attention
@@ -48,7 +49,8 @@ attn = CBAM(64)
 y = attn(x)
 print(y.shape)
 ```
-* Bam: Bottleneck attention module(BMVC 2018) [pdf](http://bmvc2018.org/contents/papers/0092.pdf)
+### 3. Bottleneck Attention Module
+* #### Bam: Bottleneck attention module(BMVC 2018) [pdf](http://bmvc2018.org/contents/papers/0092.pdf)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/bam.png)
 
