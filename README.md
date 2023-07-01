@@ -46,7 +46,7 @@ If it is helpful for your work, please⭐
     - [14. DilateFormer Model](#14-DilateFormer-Model)
     - [15. BViT Model](#15-bvit-model)
     - [16. MOAT Model](#16-moat-model)
-    - 
+      
 ## Attention Mechanisms
 ### 1. Squeeze-and-Excitation Attention
 * #### Squeeze-and-Excitation Networks (CVPR 2018) [pdf](https://arxiv.org/pdf/1709.01507)
