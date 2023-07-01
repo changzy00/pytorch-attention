@@ -14,7 +14,7 @@ If it is helpful for your work, please⭐
 - [Attention mechanisms](#Attention mechanisms)
     - [Squeeze-and-Excitation Attention](#squeeze-and-excitation-attention)
 
-    - [Convolutional Block Attention](#2-convolutional block attention)
+    - [Convolutional Block Attention](#2-convolutional-block-attention)
 
 ## Attention mechanisms
 * Squeeze-and-Excitation Attention
