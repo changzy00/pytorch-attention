@@ -16,7 +16,7 @@ If it is helpful for your work, please⭐
 
     - [2. Convolutional Block Attention Module](#2-convolutional-block-attention-module)
     - [3. Bottleneck Attention Module](#3-Bottleneck-Attention-Module)
-
+    - [4. Double attention](#4-Double-attention)
 ## Attention mechanisms
 ### 1. Squeeze-and-Excitation Attention
 * #### Squeeze-and-Excitation Networks (CVPR 2018) [pdf](https://arxiv.org/pdf/1709.01507)
@@ -64,7 +64,8 @@ attn = BAM(64)
 y = attn(x)
 print(y.shape)
 ```
-* A2-nets: Double attention networks (NeurIPS 2018) [pdf](https://arxiv.org/pdf/1810.11579)
+### 3. Double attention
+* #### A2-nets: Double attention networks (NeurIPS 2018) [pdf](https://arxiv.org/pdf/1810.11579)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/a2net.png)
 
