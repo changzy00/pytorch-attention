@@ -12,12 +12,12 @@ If it is helpful for your work, please⭐
 # Content
 
 - [Attention mechanisms](#Attention mechanisms)
-    - [SENet](#senet)
+    - [Squeeze-and-Excitation Networks (CVPR 2018)](#senet)
 
     - [2. Self Attention Usage](#2-self-attention-usage)
 
 ## Attention mechanisms
-* ### SENet
+
 * Squeeze-and-Excitation Networks (CVPR 2018) [pdf](https://arxiv.org/pdf/1709.01507)
 * ##### Model Overview
 ![](https://github.com/changzy00/pytorch-attention/blob/master/images/senet.png)
