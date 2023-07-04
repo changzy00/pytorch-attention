@@ -46,8 +46,25 @@ If it is helpful for your work, please⭐
     - [14. DilateFormer Model](#14-DilateFormer-Model)
     - [15. BViT Model](#15-bvit-model)
     - [16. MOAT Model](#16-moat-model)
-- [Convolutional Neural Networks(CNNs)](#cnns)
+- [Convolutional Neural Networks(CNNs)](#convolutional-neural-networks(cnns))
     - [1. NiN Model](#1-nin-model)
+    - [2. ResNet Model](#2-resnet-model)
+    - [3. WideResNet Model](#3-wideresnet-model)
+    - [4. DenseNet Model](#4-densenet-model)
+    - [5. PyramidNet Model](#5-pyramidnet-model)
+    - [6. MobileNetV1 Model](#6-mobilenetv1-model)
+    - [7. MobileNetV2 Model](#7-mobilenetv2-model)
+    - [8. MobileNetV3 Model](#8-mobilenetv3-model)
+    - [9. MnasNet Model](#9-mnasnet-model)
+    - [10. EfficientNetV1 Model](#10-efficientnetv1-model)
+    - [11. Res2Net Model](#11-res2net-model)
+    - [12. MobileNeXt Model](#12-mobilenext-model)
+    - [13. Ghost Model](#13-ghost-model)
+    - [14. EfficientNetV2 Model](#14-efficientnetv2-model)
+    - [15. ConvNeXt Model](#15-convnext-model)
+
+
+
 
 ## Attention Mechanisms
 ### 1. Squeeze-and-Excitation Attention
@@ -519,20 +536,202 @@ model = NiN()
 y = model(x)
 print(y.shape)
 ```
-* Deep Residual Learning for Image Recognition (CVPR 2016) [pdf](https://arxiv.org/abs/1512.03385)
-* Wide Residual Networks (BMVC 2016) [pdf](https://arxiv.org/pdf/1605.07146)
-* Densely Connected Convolutional Networks (CVPR 2017) [pdf](http://arxiv.org/abs/1608.06993v5)
-* Deep Pyramidal Residual Networks (CVPR 2017) [pdf](https://arxiv.org/pdf/1610.02915)
-* MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications (CVPR 2017) [pdf](https://arxiv.org/pdf/1704.04861.pdf)
-* MobileNetV2: Inverted Residuals and Linear Bottlenecks (CVPR 2018) [pdf](https://arxiv.org/abs/1801.04381)
-* Searching for MobileNetV3 (ICCV 2019) [pdf](https://arxiv.org/pdf/1905.02244)
-* MnasNet: Platform-Aware Neural Architecture Search for Mobile (CVPR 2019) [pdf](http://arxiv.org/pdf/1807.11626)
-* EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks (ICML 2019) [pdf](https://arxiv.org/abs/1905.11946)
-* Res2Net: A New Multi-scale Backbone Architecture (TPAMI 2019) [pdf](https://arxiv.org/pdf/1904.01169)
-* Rethinking Bottleneck Structure for Efficient Mobile Network Design (ECCV 2020) [pdf](https://arxiv.org/pdf/2007.02269.pdf)
-* GhostNet: More Features from Cheap Operations (CVPR 2020) [pdf](https://arxiv.org/abs/1911.11907)
-* EfficientNetV2: Smaller Models and Faster Trainin (ICML 2021) [pdf](https://arxiv.org/abs/2104.00298)
-* A ConvNet for the 2020s (CVPR 2022) [pdf](https://arxiv.org/abs/2201.03545)
+### 2. ResNet Model
+* #### Deep Residual Learning for Image Recognition (CVPR 2016) [pdf](https://arxiv.org/abs/1512.03385)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/resnet.png)
+
+* ##### Code
+```python
+import torch
+from cnns.resnet import resnet18 
+x = torch.randn(2, 3, 224, 224)
+model = resnet18()
+y = model(x)
+print(y.shape)
+```
+### 3. WideResNet Model
+* #### Wide Residual Networks (BMVC 2016) [pdf](https://arxiv.org/pdf/1605.07146)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/wideresnet.png)
+
+* ##### Code
+```python
+import torch
+from cnns.wideresnet import wideresnet
+x = torch.randn(2, 3, 224, 224)
+model = wideresnet()
+y = model(x)
+print(y.shape)
+```
+### 4. DenseNet Model
+* #### Densely Connected Convolutional Networks (CVPR 2017) [pdf](http://arxiv.org/abs/1608.06993v5)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/densenet.png)
+
+* ##### Code
+```python
+import torch
+from cnns.densenet import densenet121
+x = torch.randn(2, 3, 224, 224)
+model = densenet121()
+y = model(x)
+print(y.shape)
+```
+### 5. PyramidNet Model
+* #### Deep Pyramidal Residual Networks (CVPR 2017) [pdf](https://arxiv.org/pdf/1610.02915)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/yramidnet.png)
+
+* ##### Code
+```python
+import torch
+from cnns.pyramidnet import pyramidnet18
+x = torch.randn(2, 3, 224, 224)
+model = densenet121()
+y = model(x)
+print(y.shape)
+```
+### 6. MobileNetV1 Model
+* #### MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications (CVPR 2017) [pdf](https://arxiv.org/pdf/1704.04861.pdf)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/mobilenetv1.png)
+
+* ##### Code
+```python
+import torch
+from cnns.mobilenetv1 import MobileNetv1
+x = torch.randn(2, 3, 224, 224)
+model = MobileNetv1()
+y = model(x)
+print(y.shape)
+```
+### 7. MobileNetV2 Model
+* #### MobileNetV2: Inverted Residuals and Linear Bottlenecks (CVPR 2018) [pdf](https://arxiv.org/abs/1801.04381)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/mobilenetv2.png)
+
+* ##### Code
+```python
+import torch
+from cnns.mobilenetv2 import MobileNetv2
+x = torch.randn(2, 3, 224, 224)
+model = MobileNetv2()
+y = model(x)
+print(y.shape)
+```
+### 8. MobileNetV3 Model
+* #### Searching for MobileNetV3 (ICCV 2019) [pdf](https://arxiv.org/pdf/1905.02244)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/mobilenetv3.png)
+
+* ##### Code
+```python
+import torch
+from cnns.mobilenetv3 import mobilenetv3_small
+x = torch.randn(2, 3, 224, 224)
+model = mobilenetv3_small()
+y = model(x)
+print(y.shape)
+```
+### 9. MnasNet Model
+* #### MnasNet: Platform-Aware Neural Architecture Search for Mobile (CVPR 2019) [pdf](http://arxiv.org/pdf/1807.11626)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/mnasnet.png)
+
+* ##### Code
+```python
+import torch
+from cnns.mnasnet import MnasNet
+x = torch.randn(2, 3, 224, 224)
+model = MnasNet()
+y = model(x)
+print(y.shape)
+```
+### 10. EfficientNetV1 Model
+* #### EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks (ICML 2019) [pdf](https://arxiv.org/abs/1905.11946)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/efnetv1.png)
+
+* ##### Code
+```python
+import torch
+from cnns.efficientnet import EfficientNet
+x = torch.randn(2, 3, 224, 224)
+model = EfficientNet()
+y = model(x)
+print(y.shape)
+```
+### 11. Res2Net Model
+* #### Res2Net: A New Multi-scale Backbone Architecture (TPAMI 2019) [pdf](https://arxiv.org/pdf/1904.01169)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/res2net.png)
+
+* ##### Code
+```python
+import torch
+from cnns.res2net import res2net50
+x = torch.randn(2, 3, 224, 224)
+model = res2net50()
+y = model(x)
+print(y.shape)
+```
+### 12. MobileNeXt Model
+* #### Rethinking Bottleneck Structure for Efficient Mobile Network Design (ECCV 2020) [pdf](https://arxiv.org/pdf/2007.02269.pdf)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/mobilenext.png)
+
+* ##### Code
+```python
+import torch
+from cnns.mobilenext import MobileNeXt
+x = torch.randn(2, 3, 224, 224)
+model = MobileNeXt()
+y = model(x)
+print(y.shape)
+```
+### 13. GhostNet Model
+* #### GhostNet: More Features from Cheap Operations (CVPR 2020) [pdf](https://arxiv.org/abs/1911.11907)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/ghost.png)
+
+* ##### Code
+```python
+import torch
+from cnns.ghostnet import ghostnet
+x = torch.randn(2, 3, 224, 224)
+model = ghostnet()
+y = model(x)
+print(y.shape)
+```
+### 14. EfficientNetV2 Model
+* #### EfficientNetV2: Smaller Models and Faster Trainin (ICML 2021) [pdf](https://arxiv.org/abs/2104.00298)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/efnetv2.png)
+
+* ##### Code
+```python
+import torch
+from cnns.efficientnet import EfficientNetV2
+x = torch.randn(2, 3, 224, 224)
+model = EfficientNetV2()
+y = model(x)
+print(y.shape)
+```
+### 15. ConvNeXt Model
+* #### A ConvNet for the 2020s (CVPR 2022) [pdf](https://arxiv.org/abs/2201.03545)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/convnext.png)
+
+* ##### Code
+```python
+import torch
+from cnns.convnext import convnext_18
+x = torch.randn(2, 3, 224, 224)
+model = convnext_18()
+y = model(x)
+print(y.shape)
+```
 
 ## MLP-Like Models
 
