@@ -10,10 +10,10 @@ If it is helpful for your work, please⭐
 # Updating...
 
 # Install
-
+```shell
 git clone https://github.com/changzy00/pytorch-attention.git
-
 cd pytorch-attention
+```
 # Content
 
 - [Attention Mechanisms](#Attention-mechanisms)
