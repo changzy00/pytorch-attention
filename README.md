@@ -46,7 +46,9 @@ If it is helpful for your work, please⭐
     - [14. DilateFormer Model](#14-DilateFormer-Model)
     - [15. BViT Model](#15-bvit-model)
     - [16. MOAT Model](#16-moat-model)
-      
+- [Convolutional Neural Networks(CNNs)](#cnns)
+    - [1. NiN Model](#1-nin-model)
+
 ## Attention Mechanisms
 ### 1. Squeeze-and-Excitation Attention
 * #### Squeeze-and-Excitation Networks (CVPR 2018) [pdf](https://arxiv.org/pdf/1709.01507)
@@ -503,8 +505,20 @@ print(y.shape)
 
 
 ## Convolutional Neural Networks(CNNs)
+### 1. NiN Model
+* #### Network In Network (ICLR 2014) [pdf](https://arxiv.org/pdf/1312.4400v3)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/nin.png)
 
-* Network In Network (ICLR 2014) [pdf](https://arxiv.org/pdf/1312.4400v3)
+* ##### Code
+```python
+import torch
+from cnns.NiN import NiN 
+x = torch.randn(2, 3, 224, 224)
+model = NiN()
+y = model(x)
+print(y.shape)
+```
 * Deep Residual Learning for Image Recognition (CVPR 2016) [pdf](https://arxiv.org/abs/1512.03385)
 * Wide Residual Networks (BMVC 2016) [pdf](https://arxiv.org/pdf/1605.07146)
 * Densely Connected Convolutional Networks (CVPR 2017) [pdf](http://arxiv.org/abs/1608.06993v5)
