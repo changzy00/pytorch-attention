@@ -13,7 +13,6 @@ If it is helpful for your work, please⭐
 
 - [Attention Mechanisms](#Attention-mechanisms)
     - [1. Squeeze-and-Excitation Attention](#1-squeeze-and-excitation-attention)
-
     - [2. Convolutional Block Attention Module](#2-convolutional-block-attention-module)
     - [3. Bottleneck Attention Module](#3-Bottleneck-Attention-Module)
     - [4. Double Attention](#4-Double-Attention)
