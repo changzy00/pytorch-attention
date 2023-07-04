@@ -30,7 +30,6 @@ If it is helpful for your work, please⭐
  
 - [Vision Transformers](#vision-transformers)
     - [1. ViT Model](#1-ViT-Model)
-
     - [2. XCiT Model](#2-XCiT-model)
     - [3. PiT Model](#3-pit-model)
     - [4. CvT Model](#4-cvt-model)
@@ -46,6 +45,7 @@ If it is helpful for your work, please⭐
     - [14. DilateFormer Model](#14-DilateFormer-Model)
     - [15. BViT Model](#15-bvit-model)
     - [16. MOAT Model](#16-moat-model)
+      
 - [Convolutional Neural Networks(CNNs)](#convolutional-neural-networks(cnns))
     - [1. NiN Model](#1-nin-model)
     - [2. ResNet Model](#2-resnet-model)
@@ -59,10 +59,21 @@ If it is helpful for your work, please⭐
     - [10. EfficientNetV1 Model](#10-efficientnetv1-model)
     - [11. Res2Net Model](#11-res2net-model)
     - [12. MobileNeXt Model](#12-mobilenext-model)
-    - [13. Ghost Model](#13-ghost-model)
+    - [13. GhostNet Model](#13-ghostnet-model)
     - [14. EfficientNetV2 Model](#14-efficientnetv2-model)
     - [15. ConvNeXt Model](#15-convnext-model)
-
+    
+- [MLP-Like Models](#mlp-like-models)
+    - [1. MLP-Mixer Model](#1-mlp-mixer-model)
+    - [2. gMLP Model](#2-gmlp-model)
+    - [3. GFNet Model](#3-gfnet-model)
+    - [4. sMLP Model](#4-smlp-model)
+    - [5. DynaMixer Model](#5-dynamixer-model)
+    - [6. ConvMixer Model](#6-convmixer-model)
+    - [7. ViP Model](#7-vip-model)
+    - [8. CycleMLP Model](#8-cyclemlp-model)
+    - [9. Sequencer Model](#9-sequencer-model)
+    
 
 
 
@@ -734,14 +745,129 @@ print(y.shape)
 ```
 
 ## MLP-Like Models
+### 1. MLP-Mixer Model
+* #### MLP-Mixer: An all-MLP Architecture for Vision (NeurIPS 2021) [pdf](https://arxiv.org/pdf/2105.01601.pdf)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/mlpmixer.png)
 
-* MLP-Mixer: An all-MLP Architecture for Vision (NeurIPS 2021) [pdf](https://arxiv.org/pdf/2105.01601.pdf)
-* Pay Attention to MLPs (NeurIPS 2021) [pdf]( https://arxiv.org/pdf/2105.08050)
-* Global Filter Networks for Image Classification (NeurIPS 2021) [pdf](https://arxiv.org/abs/2107.00645)
-* Sparse MLP for Image Recognition: Is Self-Attention Really Necessary? (AAAI 2022) [pdf](https://arxiv.org/abs/2109.05422)
-* DynaMixer: A Vision MLP Architecture with Dynamic Mixing (ICML 2022) [pdf](https://arxiv.org/pdf/2201.12083)
-* Patches Are All You Need? (TMLR 2022) [pdf](https://arxiv.org/pdf/2201.09792)
-* Vision Permutator: A Permutable MLP-Like Architecture for Visual Recognition (TPAMI 2022) [pdf](https://arxiv.org/abs/2106.12368)
-* CycleMLP: A MLP-like Architecture for Dense Prediction (ICLR 2022) [pdf](https://arxiv.org/abs/2107.10224)
-* Sequencer: Deep LSTM for Image Classification (NeurIPS 2022) [pdf](https://arxiv.org/abs/2205.01972)
+* ##### Code
+```python
+import torch
+from mlps.mlp_mixer import MLP_Mixer
+x = torch.randn(2, 3, 224, 224)
+model = MLP_Mixer()
+y = model(x)
+print(y.shape)
+```
+### 2. gMLP Model
+* #### Pay Attention to MLPs (NeurIPS 2021) [pdf]( https://arxiv.org/pdf/2105.08050)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/gmlp.png)
 
+* ##### Code
+```python
+import torch
+from mlps.gmlp import gMLP
+x = torch.randn(2, 3, 224, 224)
+model = gMLP()
+y = model(x)
+print(y.shape)
+```
+### 3. GFNet Model
+* #### Global Filter Networks for Image Classification (NeurIPS 2021) [pdf](https://arxiv.org/abs/2107.00645)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/gfnet.png)
+
+* ##### Code
+```python
+import torch
+from mlps.gfnet import GFNet
+x = torch.randn(2, 3, 224, 224)
+model = GFNet()
+y = model(x)
+print(y.shape)
+```
+### 4. sMLP Model
+* #### Sparse MLP for Image Recognition: Is Self-Attention Really Necessary? (AAAI 2022) [pdf](https://arxiv.org/abs/2109.05422)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/smlp.png)
+
+* ##### Code
+```python
+import torch
+from mlps.smlp import sMLPNet
+x = torch.randn(2, 3, 224, 224)
+model = sMLPNet()
+y = model(x)
+print(y.shape)
+```
+### 5. DynaMixer Model
+* #### DynaMixer: A Vision MLP Architecture with Dynamic Mixing (ICML 2022) [pdf](https://arxiv.org/pdf/2201.12083)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/dynamixer.png)
+
+* ##### Code
+```python
+import torch
+from mlps.dynamixer import DynaMixer
+x = torch.randn(2, 3, 224, 224)
+model = DynaMixer()
+y = model(x)
+print(y.shape)
+```
+### 6. ConvMixer Model
+* #### Patches Are All You Need? (TMLR 2022) [pdf](https://arxiv.org/pdf/2201.09792)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/convmixer.png)
+
+* ##### Code
+```python
+import torch
+from mlps.convmixer import ConvMixer
+x = torch.randn(2, 3, 224, 224)
+model = ConvMixer(128, 6)
+y = model(x)
+print(y.shape)
+```
+### 7. ViP Model
+* #### Vision Permutator: A Permutable MLP-Like Architecture for Visual Recognition (TPAMI 2022) [pdf](https://arxiv.org/abs/2106.12368)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/vip.png)
+
+* ##### Code
+```python
+import torch
+from mlps.vip import vip_s7
+x = torch.randn(2, 3, 224, 224)
+model = vip_s7()
+y = model(x)
+print(y.shape)
+```
+### 8. CycleMLP Model
+* #### CycleMLP: A MLP-like Architecture for Dense Prediction (ICLR 2022) [pdf](https://arxiv.org/abs/2107.10224)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/cyclemlp.png)
+
+* ##### Code
+```python
+import torch
+from mlps.cyclemlp import CycleMLP_B1
+x = torch.randn(2, 3, 224, 224)
+model = CycleMLP_B1()
+y = model(x)
+print(y.shape)
+```
+### 9. Sequencer Model
+* #### Sequencer: Deep LSTM for Image Classification (NeurIPS 2022) [pdf](https://arxiv.org/abs/2205.01972)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/sequencer.png)
+
+* ##### Code
+```python
+import torch
+from mlps.sequencer import sequencer_s
+x = torch.randn(2, 3, 224, 224)
+model = sequencer_s()
+y = model(x)
+print(y.shape)
+```
