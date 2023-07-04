@@ -31,7 +31,7 @@ cd pytorch-attention
     - [12. Gaussian Context Attention](#12-Gaussian-Context-Attention)
     - [13. Coordinate Attention](#13-coordinate-attention)
     - [14. SimAM](#14-SimAM)
-    - [15. Dual Attention](#15dual-attention)
+    - [15. Dual Attention](#15-dual-attention)
  
 - [Vision Transformers](#vision-transformers)
     - [1. ViT Model](#1-ViT-Model)
@@ -50,7 +50,7 @@ cd pytorch-attention
     - [14. DilateFormer Model](#14-DilateFormer-Model)
     - [15. BViT Model](#15-bvit-model)
     - [16. MOAT Model](#16-moat-model)
-    - [17. SegFormer Model](#17segformer-model)
+    - [17. SegFormer Model](#17-segformer-model)
       
 - [Convolutional Neural Networks(CNNs)](#convolutional-neural-networks(cnns))
     - [1. NiN Model](#1-nin-model)
