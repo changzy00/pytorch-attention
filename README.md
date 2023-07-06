@@ -51,7 +51,8 @@ cd pytorch-attention
     - [15. BViT Model](#15-bvit-model)
     - [16. MOAT Model](#16-moat-model)
     - [17. SegFormer Model](#17-segformer-model)
-      
+    - [18. SETR Model](#18-setr-model)
+    
 - [Convolutional Neural Networks(CNNs)](#convolutional-neural-networks(cnns))
     - [1. NiN Model](#1-nin-model)
     - [2. ResNet Model](#2-resnet-model)
@@ -571,7 +572,21 @@ model = SegFormer(num_classes=50)
 y = model(x)
 print(y.shape)
 ```
+### 17. SETR Model
 
+* #### Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers (CVPR 2021) [pdf](https://arxiv.org/abs/2012.15840)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/setr.png)
+
+* ##### Code
+```python
+import torch
+from vision_transformers.setr import SETR
+x = torch.randn(2, 3, 480, 480)
+model = SETR(num_classes=50)
+y = model(x)
+print(y.shape)
+```
 ## Convolutional Neural Networks(CNNs)
 ### 1. NiN Model
 * #### Network In Network (ICLR 2014) [pdf](https://arxiv.org/pdf/1312.4400v3)
