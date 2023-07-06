@@ -572,7 +572,7 @@ model = SegFormer(num_classes=50)
 y = model(x)
 print(y.shape)
 ```
-### 17. SETR Model
+### 18. SETR Model
 
 * #### Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers (CVPR 2021) [pdf](https://arxiv.org/abs/2012.15840)
 * ##### Model Overview
