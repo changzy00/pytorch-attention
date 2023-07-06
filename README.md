@@ -31,6 +31,7 @@ cd pytorch-attention
     - [12. Gaussian Context Attention](#12-Gaussian-Context-Attention)
     - [13. Coordinate Attention](#13-coordinate-attention)
     - [14. SimAM](#14-SimAM)
+    - [15. Dual Attention](#15-dual-attention)
  
 - [Vision Transformers](#vision-transformers)
     - [1. ViT Model](#1-ViT-Model)
@@ -49,6 +50,7 @@ cd pytorch-attention
     - [14. DilateFormer Model](#14-DilateFormer-Model)
     - [15. BViT Model](#15-bvit-model)
     - [16. MOAT Model](#16-moat-model)
+    - [17. SegFormer Model](#17-segformer-model)
       
 - [Convolutional Neural Networks(CNNs)](#convolutional-neural-networks(cnns))
     - [1. NiN Model](#1-nin-model)
@@ -66,6 +68,8 @@ cd pytorch-attention
     - [13. GhostNet Model](#13-ghostnet-model)
     - [14. EfficientNetV2 Model](#14-efficientnetv2-model)
     - [15. ConvNeXt Model](#15-convnext-model)
+    - [16. Unet Model](#16-unet-model)
+    - [17. ESPNet Model](#17-espnet-model)
     
 - [MLP-Like Models](#mlp-like-models)
     - [1. MLP-Mixer Model](#1-mlp-mixer-model)
@@ -77,6 +81,7 @@ cd pytorch-attention
     - [7. ViP Model](#7-vip-model)
     - [8. CycleMLP Model](#8-cyclemlp-model)
     - [9. Sequencer Model](#9-sequencer-model)
+    - [10. MobileViG Model](#10-mobilevig-model)
     
 
 
@@ -143,6 +148,7 @@ attn = DoubleAttention(64, 32, 32)
 y = attn(x)
 print(y.shape)
 ```
+
 ### 5. Style Attention
 * #### Srm : A style-based recalibration module for convolutional neural networks (ICCV 2019)  [pdf](https://arxiv.org/pdf/1903.10829)
 * ##### Model Overview
@@ -295,6 +301,22 @@ x = torch.randn(2, 64, 32, 32)
 attn = simam_module(64)
 y = attn(x)
 print(y.shape)
+```
+### 15. Dual Attention
+* #### Dual Attention Network for Scene Segmentatio (CVPR 2019)  [pdf](https://arxiv.org/pdf/1809.02983.pdf)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/danet.png)
+
+* ##### Code
+```python
+import torch
+from attention_mechanisms.dual_attention import PAM, CAM
+
+x = torch.randn(2, 64, 32, 32)
+#attn = PAM(64)
+attn = CAM()
+y = attn(x)
+print(y.shape
 ```
 ## Vision Transformers
 ### 1. ViT Model
@@ -534,7 +556,21 @@ model = moat_0()
 y = model(x)
 print(y.shape)
 ```
+### 17. SegFormer Model
 
+* #### SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers (NeurIPS 2021) [pdf](https://arxiv.org/abs/2105.15203)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/segformer.png)
+
+* ##### Code
+```python
+import torch
+from vision_transformers.moat import SegFormer
+x = torch.randn(2, 3, 512, 512)
+model = SegFormer(num_classes=50)
+y = model(x)
+print(y.shape)
+```
 
 ## Convolutional Neural Networks(CNNs)
 ### 1. NiN Model
@@ -747,7 +783,34 @@ model = convnext_18()
 y = model(x)
 print(y.shape)
 ```
+### 16. Unet Model
+* #### U-Net: Convolutional Networks for Biomedical Image Segmentation (MICCAI 2015) [pdf](https://arxiv.org/pdf/1505.04597.pdf)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/unet.png)
 
+* ##### Code
+```python
+import torch
+from cnns.unet import Unet
+x = torch.randn(2, 3, 512, 512)
+model = Unet(10)
+y = model(x)
+print(y.shape)
+```
+### 17. ESPNet Model
+* #### ESPNet: Efficient Spatial Pyramid of Dilated Convolutions for Semantic Segmentation (ECCV 2018) [pdf]( https://arxiv.org/abs/1803.06815)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/espnet.png)
+
+* ##### Code
+```python
+import torch
+from cnns.espnet import ESPNet
+x = torch.randn(2, 3, 512, 512)
+model = ESPNet(10)
+y = model(x)
+print(y.shape)
+```
 ## MLP-Like Models
 ### 1. MLP-Mixer Model
 * #### MLP-Mixer: An all-MLP Architecture for Vision (NeurIPS 2021) [pdf](https://arxiv.org/pdf/2105.01601.pdf)
@@ -872,6 +935,20 @@ import torch
 from mlps.sequencer import sequencer_s
 x = torch.randn(2, 3, 224, 224)
 model = sequencer_s()
+y = model(x)
+print(y.shape)
+```
+### 10. MobileViG Model
+* #### MobileViG: Graph-Based Sparse Attention for Mobile Vision Applications (CVPRW 2023) [pdf](https://arxiv.org/pdf/2307.00395.pdf)
+* ##### Model Overview
+![](https://github.com/changzy00/pytorch-attention/blob/master/images/mobilevig.png)
+
+* ##### Code
+```python
+import torch
+from mlps.mobilevig import mobilevig_s
+x = torch.randn(2, 3, 224, 224)
+model = mobilevig_s()
 y = model(x)
 print(y.shape)
 ```
